@@ -84,7 +84,8 @@
     text-transform: none;
     
     &:hover,
-    &:focus{background-color: #188CE8;
+    &:focus{
+        background-color: #0A8817;
     }
 }
 
@@ -132,6 +133,10 @@
     border: solid 2px #F8D24E;
     padding: 12px 33px;
     height: 42px;
+    &:hover,
+    &:focus{
+        border: solid 2px #0A8817;
+    }
     
 }
 .hero-box__btn{
@@ -146,6 +151,10 @@
     padding: 12px 33px;
     background-color: transparent;
     border: none;
+    &:hover,
+    &:focus{
+        color: #0A8817;
+    }
 }
 .hero-box-main__menu{
     display: flex;
@@ -202,12 +211,14 @@
     z-index: 1;
     top: -110px;
     right: 1%;
+    pointer-events: none;
 }
 .hero-img-background{
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
+    pointer-events: none;
    
 }
 
